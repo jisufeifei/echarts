@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul li {
+    list-style: none;
+}
 body{
     background: url('../images/bg.jpg') no-repeat;
     background-size: cover;
@@ -107,10 +110,27 @@ header{
                 background-color: aquamarine;
             }
         }
-        
+        .no{
+            // width: 100%;
+            background: rgba(101, 132, 226, 0.1);
+            padding: .1875rem;
+            .no-hd{
+                
+                border: 1px solid rgba(25, 186, 139, 0.17);
+                ul{
+                    display: flex;
+                }
+            }
+            .no-bd{
+                ul{
+                    display: flex;
+                }
+            }
+        }
     }
-    & :nth-child(2){
+    .column:nth-child(2){
         flex: 5;
+        margin: 0 .125rem .1875rem;
     }
     
 }

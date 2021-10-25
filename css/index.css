@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+ul li {
+  list-style: none;
+}
 body {
   background: url('../images/bg.jpg') no-repeat;
   background-size: cover;
@@ -106,6 +109,20 @@ header .showTime {
   height: 3rem;
   background-color: aquamarine;
 }
-.mainBox :nth-child(2) {
+.mainBox .column .no {
+  background: rgba(101, 132, 226, 0.1);
+  padding: 0.1875rem;
+}
+.mainBox .column .no .no-hd {
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.mainBox .column .no .no-hd ul {
+  display: flex;
+}
+.mainBox .column .no .no-bd ul {
+  display: flex;
+}
+.mainBox .column:nth-child(2) {
   flex: 5;
+  margin: 0 0.125rem 0.1875rem;
 }
